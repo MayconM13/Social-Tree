@@ -1,5 +1,48 @@
-body{
- background: url(./assets/bg-mobile.jpg) no-repeat;
- background-position: top center;
- background-size: cover;
+/* Configurações do HTML */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Caixa do Body */
+
+body{
+  background: url(./assets/bg-mobile.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+body * {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* Caixa Principal */
+
+#Apresentação{
+  width:  360px;
+  margin: 56px auto 0px;
+}
+
+#Profile {
+  text-align: center;
+  padding: 24px;
+}
+
+/* Caixa de Imagem */
+
+#Profile img{
+  width: 102px;
+  border-radius: 60px;
+}
+
+/* Caixa de Paragrafo */
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
