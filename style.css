@@ -24,6 +24,7 @@ body * {
 #Apresentação{
   width:  360px;
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
 #Profile {
@@ -34,8 +35,9 @@ body * {
 /* Caixa de Imagem */
 
 #Profile img{
-  width: 102px;
+  width: 112px;
   border-radius: 60px;
+  border: 3px solid rgba(255, 255, 255, 0.5 );
 }
 
 /* Caixa de Paragrafo */
@@ -50,12 +52,28 @@ body * {
 
 ul {
   list-style: none;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-Ul li {
-  Border: 1px solid green;
-  text-align: center;
+Ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5 );
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: background 0.3s ;
 }
 
+/* Pseudo-Selector*/
+ul li a:hover{
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white
+}
