@@ -30,7 +30,7 @@
 /* Caixa do Body */
 
 body{
-  background: var(--bg-url) no-repeat;
+  background: url(./assets/bg-mobile.jpg) no-repeat;
   background-position: top center;
   background-size: cover;
 }
@@ -42,7 +42,7 @@ body * {
 
 /* Caixa Principal */
 
-#Apresentação{
+#Apresentação {
   width:  360px;
   margin: 56px auto 0px;
   padding: 0 24px;
@@ -55,7 +55,7 @@ body * {
 
 /* Caixa de Imagem */
 
-#Profile img{
+#Profile img {
   width: 112px;
   border-radius: 60px;
   border: 3px solid rgba(255, 255, 255, 0.5 );
@@ -67,6 +67,44 @@ body * {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+}
+
+/* Switch */
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px ;
 }
 
 /* Caixa de Links */
@@ -96,36 +134,6 @@ Ul li a {
 
 /* Pseudo-Selector*/
 ul li a:hover{
-  background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
-}
-
-#social-links{
-  display: flex;
-  justify-content: center;
-  padding: 24px 0;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Caixa de links deredes sociais*/
-#social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  transition: background 0.2s;
-  border-radius: 50%;
-}
-
-#social-links a:hover{
-  background: var(--highlight-color);
-}
-
-/* Rodapé de dedicação*/
-
-footer {
-  padding: 24px 0;
-  text-align: center;
-  font-size: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white
 }
